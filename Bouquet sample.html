@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hwa String Quartet - Musical Bouquet Sample</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&amp;family=Raleway:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .font-script { font-family: 'Cormorant Garamond', serif; }
+      .font-sans-body { font-family: 'Raleway', sans-serif; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#D9B5A3",
+              "background-light": "#FAF7F2",
+              "background-dark": "#3D352E",
+              "text-light": "#3D352E",
+              "text-dark": "#FAF7F2",
+              "text-subtle-light": "#897c71",
+              "text-subtle-dark": "#b0a399",
+              "card-light": "#F5F1EB",
+              "card-dark": "#4a413a",
+            },
+            fontFamily: {
+              "display": ['Cormorant Garamond', 'serif'],
+              "sans-body": ['Raleway', 'sans-serif'],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans-body">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 flex flex-1 justify-center py-16 sm:py-24">
+<div class="layout-content-container flex flex-col max-w-2xl flex-1 items-center">
+<!-- SectionHeader -->
+<h2 class="font-display italic text-4xl sm:text-5xl font-normal text-text-light dark:text-text-dark text-center leading-tight tracking-normal pb-3 pt-5">
+                        Our Musical Bouquets
+                    </h2>
+<!-- BodyText -->
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-relaxed pb-8 pt-2 px-4 text-center max-w-xl">
+                        Discover our curated musical selections, designed to perfectly complement every moment of your special event, from serene processionals to joyful celebrations.
+                    </p>
+<!-- MediaPlayer Card -->
+<div class="w-full max-w-lg px-4 py-3">
+<div class="flex flex-col gap-3 rounded-xl bg-card-light dark:bg-card-dark px-6 py-5 shadow-sm">
+<div class="flex items-center gap-4 overflow-hidden">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16 shrink-0" data-alt="album art for Canon in D, abstract floral pattern" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtDfYKEISiUQTeEMz_tJ6hgfpzO669Om6a3FiXLSw3b2IIVo7G8N5lFJCmG_SWtwxkWZvFCjM4oHkFrBHEYc7Er0PPSbEMGXa3Mpkx7XAQGujjCfqqKy_zyEnqFP1R9SxiIRVYwmzwVVJRvLYltDFyzyoT21zzxNsUto0rjvSHG5dBY7R_7MsWJOFgd0qJF_lQdBkz_IHTGvSCKxi-cPhg5Ln_JzPTFsvOY0We5LWxvnjBQiQ2P6mUbxI0FAXU_Dsn-2OaXrG7oCc");'></div>
+<div class="flex-1 min-w-0">
+<p class="text-text-light dark:text-text-dark text-lg font-bold leading-tight truncate">Canon in D</p>
+<p class="text-text-subtle-light dark:text-text-subtle-dark text-sm font-normal leading-normal truncate">Pachelbel</p>
+</div>
+<button class="flex shrink-0 items-center justify-center rounded-full size-12 bg-primary text-background-dark hover:bg-opacity-90 transition-colors">
+<span class="material-symbols-outlined !text-3xl">play_arrow</span>
+</button>
+</div>
+<div class="pt-2">
+<div class="relative flex h-4 items-center justify-center">
+<div class="h-1.5 flex-1 rounded-full bg-primary/30">
+<div class="h-1.5 w-1/2 rounded-full bg-primary"></div>
+</div>
+<div class="absolute" style="left: 50%;">
+<div class="relative -ml-2">
+<div class="size-4 rounded-full bg-primary ring-2 ring-background-light dark:ring-background-dark"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<p class="text-text-subtle-light dark:text-text-subtle-dark text-xs font-medium leading-normal">1:17</p>
+<p class="text-text-subtle-light dark:text-text-subtle-dark text-xs font-medium leading-normal">2:23</p>
+</div>
+</div>
+</div>
+</div>
+<!-- BodyText for Description -->
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal pb-6 pt-4 px-4 text-center">
+                        Perfect for processionals and serene moments.
+                    </p>
+<!-- SingleButton -->
+<div class="flex px-4 py-3 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-background-dark text-base font-bold leading-normal tracking-wide hover:bg-opacity-90 transition-colors">
+<span class="truncate">View Full Repertoire</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
