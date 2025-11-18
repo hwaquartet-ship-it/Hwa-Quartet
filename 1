@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hwa String Quartet</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        @layer base {
+          body {
+            font-family: 'Manrope', sans-serif;
+          }
+          h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+          }
+        }
+      </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#D8BFD8", // Dusty Rose
+              "accent-sage": "#B2AC88",
+              "accent-peach": "#FFE5B4",
+              "background-light": "#FAF7F5",
+              "background-dark": "#1A1817",
+              "text-light": "#333333",
+              "text-dark": "#FAF7F5",
+            },
+            fontFamily: {
+              "display": ["Playfair Display", "serif"],
+              "body": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="absolute top-0 left-0 right-0 z-10 p-5 md:px-10 lg:px-20">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="font-display text-xl font-bold">Hwa String Quartet</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Musical Bouquet Sample</a>
+</nav>
+<button class="md:hidden">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<div class="relative flex h-screen w-full items-center justify-center overflow-hidden p-4">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A soft-focus background of pastel flower petals scattered on a light surface, creating a dreamy and artistic texture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-bqY2o88XIEG4XzXsE_C3M2STN-3VH9wXvEdVZoTpPWdN2J01lvThN9rE7Y2hHnmDqLEQsUBADRdwygsWH4-ME3woF5rKVfh24IP07RGKQZ64gHEL1dEEs-KxmAfX75TTu2lQPfeLAImveNQaG5FfiqLYKyHlSLeKpcKfY5Ug5KWWyEu4o-VNo3gB5N7CQoue7Y_c3kZjQOLkwEbcrXb0kQQsV3LkrnWRjaaZ2FLfXH-005NLN6xXOz_4uQRCmkhPfA5uvJh1dFQ');">
+<div class="absolute inset-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<h1 class="font-display text-5xl font-bold tracking-tight text-text-light dark:text-text-dark sm:text-7xl lg:text-8xl">Hwa String Quartet</h1>
+<p class="mt-4 text-lg font-medium tracking-wide text-text-light/80 dark:text-text-dark/80 sm:text-xl">Celebrating diversity through sound</p>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-3xl animate-bounce">expand_more</span>
+</div>
+</div>
+<!-- This is where the rest of the page content like About, Gallery, etc. would go -->
+</main>
+<footer class="w-full bg-background-light dark:bg-background-dark border-t border-text-light/10 dark:border-text-dark/10">
+<div class="mx-auto max-w-7xl px-5 py-10">
+<div class="flex flex-col items-center gap-8">
+<nav class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Gallery</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Musical Bouquet Sample</a>
+</nav>
+<div class="flex gap-4">
+<a class="text-text-light/60 dark:text-text-dark/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">group</span>
+</a>
+<a class="text-text-light/60 dark:text-text-dark/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">photo_camera</span>
+</a>
+<a class="text-text-light/60 dark:text-text-dark/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">videocam</span>
+</a>
+<a class="text-text-light/60 dark:text-text-dark/60 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-2xl">campaign</span>
+</a>
+</div>
+<p class="text-sm text-text-light/60 dark:text-text-dark/60">© 2024 Hwa String Quartet. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
