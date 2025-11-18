@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hwa String Quartet — 花·四重奏</title>
+<meta name="description" content="Hwa String Quartet — Celebrating diversity through sound.">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fffaf8;
+  --accent:#f3d9dd;
+  --muted:#8b8b8b;
+  --text:#1b1b1b;
+  --gold:#c9a97a;
+  --flower-line:#d69aa6;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family: 'Dancing Script', cursive, serif;
+  background: linear-gradient(180deg,var(--bg),#fff);
+  -webkit-font-smoothing: antialiased;
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+a{color:inherit;text-decoration:none;}
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  padding-left:80px; /* 给侧边菜单留空间 */
+}
+h1{font-size:48px;margin:0;color:var(--text);}
+p.lead{font-size:20px;color:var(--muted);max-width:700px;margin:16px auto;}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  padding:12px 24px;
+  margin:8px;
+  border-radius:12px;
+  background:var(--accent);
+  color:var(--text);
+  font-weight:700;
+  cursor:pointer;
+  border:none;
+  transition: transform 0.3s;
+}
+.btn:hover{transform:translateY(-3px);}
+section{
+  padding:100px 28px 60px 28px;
+  max-width:1050px;
+  margin:0 auto;
+}
+h2{font-size:32px;margin-bottom:16px;color:var(--text);}
+.card{background:#fff;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 6px 18px rgba(0,0,0,0.03);}
+.meta{color:var(--muted);font-size:16px;line-height:1.4;}
+.venues{display:flex;flex-wrap:wrap;gap:8px;}
+.venue{background:rgba(0,0,0,0.02);padding:8px 12px;border-radius:10px;font-size:14px;color:var(--muted);}
+footer{text-align:center;color:var(--muted);padding:28px 0;font-size:14px;}
+/* 飘落花瓣 */
+.petal{
+  position:absolute;
+  border-radius:50%;
+  opacity:0.8;
+  pointer-events:none;
+  animation:fall linear infinite;
+}
+@keyframes fall{
+  0%{transform:translateY(0) rotate(0deg);opacity:1;}
+  100%{transform:translateY(100vh) rotate(360deg);opacity:0;}
+}
+/* 侧边菜单 */
+.sidebar{
+  position:fixed;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  background:rgba(255,250,248,0.9);
+  padding:16px 12px;
+  border-radius:0 12px 12px 0;
+  box-shadow:2px 4px 12px rgba(0,0,0,0.1);
+  z-index:1000;
+}
+.sidebar button{
+  background:none;
+  border:none;
+  font-family:inherit;
+  font-size:18px;
+  color:var(--text);
+  cursor:pointer;
+  position:relative;
+  padding-left:28px;
+  transition:color 0.3s;
+}
+.sidebar button:hover{color:var(--gold);}
+.sidebar button::before{
+  content:"🌸";
+  position:absolute;
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+  transition: transform 0.3s;
+}
+.sidebar button:hover::before{
+  transform:translateY(-50%) rotate(20deg) scale(1.2);
+}
+@media(max-width:700px){
+  .sidebar{top:auto;bottom:0;left:50%;transform:translateX(-50%);flex-direction:row;border-radius:12px 12px 0 0;padding:8px;}
+  .hero{padding-left:16px;}
+}
+</style>
+</head>
+<body>
+
+<!-- 侧边菜单 -->
+<div class="sidebar">
+  <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About Us</button>
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+  <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">Gallery</button>
+  <button onclick="document.getElementById('musical').scrollIntoView({behavior:'smooth'})">Musical Bouquet</button>
+</div>
+
+<div class="hero">
+  <h1>Hwa String Quartet</h1>
+  <p class="lead">Celebrating diversity through sound. Four musicians from Singapore, Korea, Taiwan, and China come together to create a unique, multicultural voice through classical and contemporary repertoire.</p>
+  <div>
+    <button class="btn" onclick="document.getElementById('musical').scrollIntoView({behavior:'smooth'})">Musical Bouquet Sample</button>
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a Performance</button>
+  </div>
+</div>
+
+<!-- 飘落花瓣 -->
+<script>
+const colors=['#f3d9dd','#fdeff0','#f7dce1','#f9e6ea','#fce9f0'];
+for(let i=0;i<50;i++){
+  const petal=document.createElement('div');
+  petal.className='petal';
+  petal.style.left=Math.random()*100+'vw';
+  petal.style.width=8+Math.random()*8+'px';
+  petal.style.height=8+Math.random()*8+'px';
+  petal.style.background=colors[Math.floor(Math.random()*colors.length)];
+  petal.style.animationDuration=2+Math.random()*3+'s';
+  petal.style.animationDelay=Math.random()*5+'s';
+  document.body.appendChild(petal);
+}
+</script>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="meta">
+    Formed in 2025, Hwa String Quartet brings together four musicians from Singapore, Korea, Taiwan, and China. 
+    "Hwa (花)" symbolizes flowers in Asian cultures — representing beauty, growth, and connection. 
+    We perform classical masterpieces, contemporary works, and creative arrangements, sharing our multicultural voice with audiences worldwide.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="card">
+    <p class="meta">For bookings, press inquiries, or collaborations, please contact:</p>
+    <p class="meta">Email: <a href="mailto:hwa.quartet@gmail.com">hwa.quartet@gmail.com</a></p>
+    <p class="meta">Instagram: <a href="https://instagram.com/hwa.quartet" target="_blank">@hwa.quartet</a></p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="card">
+    <p class="meta">A curated selection of performances, rehearsals, and behind-the-scenes moments, showcasing our musical journey and ensemble spirit.</p>
+  </div>
+</section>
+
+<section id="musical">
+  <h2>Musical Bouquet Sample</h2>
+  <div class="card">
+    <p class="meta">Experience our signature musical bouquets — short, expressive pieces combining melodies from different cultures, creating a harmonious blend of classical and contemporary sounds.</p>
+    <button class="btn" onclick="alert('播放音乐示例');">Play Sample</button>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Hwa String Quartet · Wrapped with ♥ 
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
