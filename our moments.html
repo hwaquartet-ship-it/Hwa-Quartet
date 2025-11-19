@@ -1,159 +1,114 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Gallery - Hwa String Quartet</title>
+<title>Contact - Hwa String Quartet</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#E6C0C8", // Dusty Rose
-                        "accent-sage": "#B2C2B3",
-                        "accent-lavender": "#D1C4E9",
-                        "background-light": "#FAF8F5",
-                        "background-dark": "#1F1D2B", // Dark warm gray
-                        "text-light": "#4A4A4A",
-                        "text-dark": "#E0DDEE",
-                        "surface-dark": "#26233A",
-                    },
-                    fontFamily: {
-                        "display": ["'Work Sans'", 'sans-serif'],
-                        "heading": ["'Playfair Display'", 'serif'],
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.5rem",
-                        "lg": "0.75rem",
-                        "xl": "1rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-<style type="text/tailwindcss">
-        body {
-            @apply font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark;
-        }
-    </style>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#d8c2c0",
+        "background-light": "#fcfbf9",
+        "background-dark": "#181818",
+        "surface-dark": "#202020",
+        "text-light": "#333333",
+        "text-dark": "#e0e0e0",
+        "subtle-light": "#555555",
+        "subtle-dark": "#a0a0a0",
+        "border-dark": "#333333",
+      },
+      fontFamily: {
+        "display": ["Inter", "sans-serif"],
+        "script": ["Playfair Display", "serif"],
+      },
+      borderRadius: {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+    },
+  },
+}
+</script>
+<style>
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+</style>
 </head>
-<body class="group/design-root">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
-<div class="flex flex-1 justify-center px-4 sm:px-8 md:px-10 lg:px-20 xl:px-40 py-5">
-<div class="layout-content-container flex w-full max-w-[1280px] flex-1 flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-primary/20 dark:border-primary/10 px-4 md:px-10 py-4">
-<div class="flex items-center gap-3 text-text-light dark:text-text-dark">
-<div class="size-5 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-6xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-black/10 dark:border-border-dark px-4 sm:px-10 py-4">
+<div class="flex items-center gap-3">
+<div class="text-text-light dark:text-text-dark size-5">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z"></path>
 </svg>
 </div>
-<h2 class="font-heading text-xl font-bold tracking-wide">Hwa String Quartet</h2>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em]">Hwa String Quartet</h2>
 </div>
-<div class="hidden lg:flex flex-1 justify-end gap-8">
-<nav class="flex items-center gap-8">
-<a class="text-sm font-medium transition-colors hover:text-primary dark:hover:text-primary" href="#">Home</a>
-<a class="text-sm font-medium transition-colors hover:text-primary dark:hover:text-primary" href="#">About</a>
-<a class="text-sm font-bold text-primary dark:text-primary" href="#">Gallery</a>
-<a class="text-sm font-medium transition-colors hover:text-primary dark:hover:text-primary" href="#">Concerts</a>
-<a class="text-sm font-medium transition-colors hover:text-primary dark:hover:text-primary" href="#">Contact</a>
-</nav>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal" href="#">About</a>
+<a class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal" href="#">Bouquet sample</a>
+<a class="text-subtle-light dark:text-subtle-dark text-sm font-medium leading-normal" href="#">Our moments</a>
+<a class="text-text-light dark:text-text-dark text-sm font-bold leading-normal" href="#">Contact</a>
 </div>
-<div class="lg:hidden">
-<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg bg-transparent">
-<span class="material-symbols-outlined text-2xl text-text-light dark:text-text-dark">menu</span>
-</button>
 </div>
 </header>
-<main class="flex flex-col gap-8 py-10 px-4 md:px-10">
-<div class="flex flex-wrap justify-between gap-4 items-center">
-<h1 class="font-heading text-4xl md:text-5xl font-semibold italic tracking-tight text-text-light dark:text-text-dark min-w-72">Our Moments</h1>
-</div>
-<div class="flex gap-2 md:gap-3 flex-wrap">
-<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary pl-5 pr-5 shadow-sm transition-transform hover:scale-105">
-<p class="text-sm font-semibold leading-normal text-white">All</p>
-</div>
-<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-background-light dark:bg-surface-dark pl-5 pr-5 transition-colors hover:bg-primary/20 dark:hover:bg-primary/20">
-<p class="text-sm font-medium leading-normal">Performances</p>
-</div>
-<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-background-light dark:bg-surface-dark pl-5 pr-5 transition-colors hover:bg-primary/20 dark:hover:bg-primary/20">
-<p class="text-sm font-medium leading-normal">Rehearsals</p>
-</div>
-<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-background-light dark:bg-surface-dark pl-5 pr-5 transition-colors hover:bg-primary/20 dark:hover:bg-primary/20">
-<p class="text-sm font-medium leading-normal">Behind the Scenes</p>
+<main class="flex-grow px-4 py-12 sm:py-16 lg:py-24">
+<div class="flex flex-wrap justify-between gap-4 p-4 text-center">
+<div class="flex w-full flex-col items-center gap-3">
+<h1 class="font-script italic text-text-light dark:text-text-dark text-5xl md:text-6xl font-medium leading-tight">Get in Touch</h1>
+<p class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-normal max-w-xl">We'd love to hear from you. Reach out for bookings, collaborations, or general inquiries using the details below or the contact form.</p>
 </div>
 </div>
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Quartet performing on a brightly lit stage" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTFexCTHqSfA6l3v-RQP_ddsgysAIn2PxooyytNFeUEZIVVvT0L3tI_0fqBDwMx5n66oQxkfhr7pZhnt4sK_QAO7DckdfzLZ8w67vV-40lsSANxHh2on9gXtAqbEQHnkBLPXVz9sdKjAFQsO_-HagbWExdtFMkV54n_PgUD_CH0q-8jonLmEp-fjdqLY9HlyDGcxy_-xj799x6c-KjgcDW1A7wD9AzUtj46KikWQz6a_tEAgAPHE3I3wTW00S1Jh3M5beAfFuy1A4");'></div>
+<div class="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-5 lg:gap-8">
+<div class="lg:col-span-2 flex flex-col gap-10">
+<div>
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4">Contact Information</h3>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-4 bg-transparent px-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-subtle-light dark:text-subtle-dark flex items-center justify-center rounded-lg bg-black/5 dark:bg-surface-dark shrink-0 size-10">
+<span class="material-symbols-outlined">mail</span>
 </div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Close-up of a cellist during a rehearsal" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCq9Fap3h3g7RsboLj3yLs7WQstmPNlJGlBy2tAFJOWx4IS12ZzABC26T1mVp7u5E_SPAlden5tFD8z57u_TgXcNY-TJxouM-83EO3W5bq2hDh7Lv6jmymv7xBDzHrBqek3rFNg44SZ75KX_NDRyoVlrifWPAS-KoSrD73Z8No7vwCMNPpfVlRaVTkwtvuYu9X6Mlqcg1sKHaVLZJfIITHtnLoNDJD3ncR7f8tkKGpp8xZN9nG19mQtetvtDpcUQSCWR6wUcZJOmjA");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="A candid shot of the quartet members laughing together backstage" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmZ9UwLcAABeBdVhqg0YA0N-GWQtgWcqRDtq_EZGo8K_Tzx8GOl5YcLSoVguJ_cOWd8CG6vnzN5ezoeWiqB_DZ_JgIDGdtaZa8tDr_BMbWYeBAC48SG2l8qgUUHAgKaVzI5CpwCZv42jfG_AFzEvikFk8aJe8-_WTJIosNhYzKuDEQcpg8ngK2MAQN_Dru5EHUZkTD_8T7quFo9LTGBxGefXR9btMt-M6rqkJ06c8cDBOHwZ9BqcQ8GpVIrgc0L3P_nASoQXsqrNc");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Violinist in deep concentration during practice" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_O0BomT2f20VL_mnCJNS7yvEKAG8in9RZvOPyYlr3cLbZif7TUjD940jOJLOSdFy0quvyCUjGnYNiEpfdHYzlgXhRqE9NZZmrqxn0Sxxobeg1ftkVOqCVh1OOwgV4b9d2JolvdvJjGYwx-flRYJEvCopJ6vbnuQPyUqio5z0yKqPd70YA2jkNcSJv-XZHssr3URURj3JWIBpz-HwP1eVQ_GQlVXjfykuMtUgVFqAFv27t3ME-SmtZvz2x1C0OkdjhW18XjfHs6Ik");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Full view of the string quartet on a grand stage" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFyQVRsx2Wconqx12TxE31cIEyTZXe4lCfm9NLKTmpeZER1KCxj_rrAeQNN-ozGtlXLlohzXIoaI4_gdS2UgYLPLhi_AidEBHBbddgLopxeombaVTOdQtshBer0CyeI_pffXCNHJDU21ho1vTtWcEJk8geClVGZCyGzi4QyGKSx-Nm-1SFBb6Zx1qFx4EgsOWZO_G-9z8v_cl8sTKmMMIV9TpkPEwIu0dVeEaqmY-YEwTMEwjXp22yTcq8XXTOeVc8jIvNmeUieWo");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Members reviewing sheet music in a sunlit room" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdbBDGoHmSjagcJsSD3_bshLz9fuf0Y9mTeKBC4Z-NXBgLCnADCkzWpXORkGZFTDj3-Hd-BXvC0gAA2RqBIvT3R3hrW8gkZ61KowCp0wM5clv3GQkb9bWu7GvDTZ-9_Y4cQghgYTi99O2-ef5S1Ju-yGcxAlJB2dKLcc_DaiqFUX0H3AtZPTgLi9et4PK2hjyLBcmIpzgLDm65MacPSPnoPg_jPB97Mn_f4cLVxf1PWjfkOmcQxtyAe7kxFzk4L2Uxtj4_oKijDUE");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Backstage moment before a performance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANkdPyqgCa7nuLM35YPlasqeor8U_esc2XRPV9Eng4qoPkiobcjjB2YVQ4nDsLoqmqAIp8fTjZ6cdxSr3si8MfiTF8ajDX_BCSAT9YoCyk1alS60tGr0f844DknAIMUO34LEDd-ILIESvDXW-n3YGChSE4xL7kl98zrpwcOn8wlSivrCuwe5SmXKKO3KyyrJ7NmSEPgXOocTX_iAacFYamsCJpF4xv1yYQe10wDi3nngWnnuAplfrTS9-MEAQiN-ctZGqmMsj0Cfk");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Intimate shot of hands on a violin" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFtq_szZg6yIt1AsyFIk4aU26h7eiF2QlXiFobUgxosEvBqd5Ie6DQE3b_eNMZj0mpsfF9nZd2aUxOAhQeleWetguGfQsEKr3Na0vKGgpqSFR8WVSWONwWQv89cyuctZjj4JTCbGwC5kRAh9QVhGKRKf80Qw0sM1ZTdBsYwcxOIPT3LK8V8aD5wx3f_bOKNK_jkFLcYWpI5NCFizrU7LSwFH-6Gx0IVd4LD0i7Pt6hbDbEqenH5SkpTvefHq9sydgKmo0dDl1TXg8");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="The quartet taking a bow after a concert" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCC9fPAdU-s995qBNYVoE53o35IN2OqEGdnX4QDs0MKw8tR9tRxuAl8oBCG5wZcSzXk7g-YtSlyuxnxAkoWY4T_wUcDDoLZKtayy4_CfOelvBD_bEA1ezw89XekMcv4cwim2YWA46nPQRYj8xYuo5Zt4f2kv5ftq8e9qvpUvq2U9cnkQbYDgBpQ82pdKC6hvcPOdhujcsbn2PS67cBot1Z8SKNL750uCLS_UCfs-ajsjoQDrE9tldcEQpG0njjLny2RF-b_zXQnHoQ");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Outdoor rehearsal in a garden setting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbWravG_ZmPMdeixTw-jpIAIjQ0uEr5M46MyGZq95q-7I2D4f_mDkuuT02pHCcphYxkDLyZdPnFaCswnt-y0aaEwXtyoU0q9ifrgXGUL7FPQ5MC91zp7IYRU3j5weDB2UC0AIGG_3OrKaekgSE9p02EDV2lkfkKtqRgsZc2nQVethcruGldIz4NDLkWqGFQAEb9csyqLd33M5SU9l3PKK1fs8Uzzm1xWvbYIsX9zbhtx9colKzOsmdqX8PUwjl0zN7-cPoNQxaHNY");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Post-concert celebration with the quartet" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGbP5wgHXmLTcev2W_cRA7X_TQfNRQPtqlBbXQ0rh3ptnlMI-rU3N6SfVJO8teGBTfxZeo9D3XBLsrJUjLj2HZwwCQozEau0ZR_cmsVSE7KTCz6nihPYR8N7sA8LkIn4js8l0HBap5DsH3PttmlcyVVCuvVDuPHVsKwur2mT5lJF2gUySQV9Ll21J8_3f4p8sDpg-EGFdbUSiZhP04T4DLPAQoEoDAwdrcvLMwcgQTvpE1fqDlih5N1OLyZzWQ05vPnI6yFIaEoX8");'></div>
-</div>
-<div class="group relative overflow-hidden rounded-lg">
-<div class="w-full bg-center bg-no-repeat aspect-w-3 aspect-h-4 bg-cover transition-transform duration-300 ease-in-out group-hover:scale-105" data-alt="Abstract view of string instruments resting on chairs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-oBI_k7hq5k2w8bc9P32aTXF_GQ382UqLeiMYy733g2hzxmpgWtSsjAb75Kwz46ukXbx88Bz-SQcdOu-AkzbDp-G5e6OlZN2jk_n6mgttUPhaIGINv87VOdwoWZOiFjxsJJrVV71IZBV0P-VFKyjnNJ5v7hVGpELkJUUODpxiQ8OdIqwvg12rx-MXHdmtqiVsuYeNUQF_HJEXFHROgCo7qkNUnOA94vM2tVyrN4OGvNPfYxIPaW1s9Q2AuOfQODYr5FfWKRiDQ5w");'></div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">inquiries@hwastringquartet.com</p>
 </div>
 </div>
-</main>
-<footer class="flex flex-col gap-8 px-5 py-12 text-center border-t border-primary/20 dark:border-primary/10 mt-10">
-<nav class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
-<a class="text-sm transition-colors hover:text-primary dark:hover:text-primary" href="#">Home</a>
-<a class="text-sm transition-colors hover:text-primary dark:hover:text-primary" href="#">About</a>
-<a class="text-sm transition-colors hover:text-primary dark:hover:text-primary" href="#">Gallery</a>
-<a class="text-sm transition-colors hover:text-primary dark:hover:text-primary" href="#">Concerts</a>
-<a class="text-sm transition-colors hover:text-primary dark:hover:text-primary" href="#">Contact</a>
-<a class="text-sm transition-colors hover:text-primary dark:hover:text-primary" href="#">Privacy Policy</a>
-</nav>
-<div class="flex flex-wrap justify-center gap-6">
-<a class="transition-colors hover:text-primary dark:hover:text-primary" href="#">
-<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+<div class="flex items-center gap-4 bg-transparent px-4 min-h-14 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-subtle-light dark:text-subtle-dark flex items-center justify-center rounded-lg bg-black/5 dark:bg-surface-dark shrink-0 size-10">
+<span class="material-symbols-outlined">music_note</span>
+</div>
+<p class="text-text-light dark:text-text-dark text-base font-normal leading-normal flex-1 truncate">bookings@hwastringquartet.com</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4">Follow Our Journey</h3>
+<div class="flex items-center gap-4 px-4">
+<!-- Facebook -->
+<a class="flex h-10 w-10 items-center justify-center rounded-lg bg-black/5 dark:bg-surface-dark text-subtle-light dark:text-subtle-dark hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+</svg>
 </a>
-<a class="transition-colors hover:text-primary dark:hover:text-primary" href="#">
-<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.792 2.013 10.146 2 12.315 2zm-1.002 6.363a4.932 4.932 0 110 9.864 4.932 4.932 0 010-9.864zM12 15.34a3.34 3.34 0 100-6.68 3.34 3.34 0 000 6.68zm5.438-9.408a1.232 1.232 0 100 2.464 1.232 1.232 0 000-2.464z" fill-rule="evenodd"></path></svg>
-</a>
-<a class="transition-colors hover:text-primary dark:hover:text-primary" href="#">
-<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.78 22 12 22 12s0 3.22-.42 4.814a2.502 2.502 0 01-1.768 1.768c-1.594.42-7.812.42-7.812.42s-6.218 0-7.812-.42a2.502 2.502 0 01-1.768-1.768C2 15.22 2 12 2 12s0-3.22.42-4.814a2.502 2.502 0 011.768-1.768C5.782 5 12 5 12 5s6.218 0 7.812.418zM9.94 15.55v-7.1l6.592 3.55-6.592 3.55z" fill-rule="evenodd"></path></svg>
-</a>
-</div>
-<p class="text-sm">© 2024 Hwa String Quartet. All Rights Reserved.</p>
-</footer>
-</div>
-</div>
-</div>
-</div>
-</body></html>
+<!-- Instagram -->
+<a class="flex h-10 w-10 items-center justify-center rounded-lg bg-black/5 dark:bg-surface-dark text-subtle-light dark:text-subtle-dark hover:text-text-light dark:hover:text-text-dark transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 012.792-2.792c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0-2a7 7 0 110 14 7 7 0 010-14zm6.406-1.18a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.
